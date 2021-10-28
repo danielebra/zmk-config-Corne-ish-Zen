@@ -47,9 +47,9 @@
                 symbol_layer {
                         label = "SYMBOL";
                         bindings = < 
-   &kp none     &kp GRAVE &kp AMPS &kp PLUS &kp EQUAL &kp AT        &kp EXCL    &kp ASTRK &kp HASH &kp SLASH &kp PIPE   &none
-   &kp none     &kp CARET &kp LBKT &kp LBRC &kp LPAR  &kp DLLR      &kp UNDER   &kp RPAR  &kp RBRC &kp RBKT  &kp MINUS  &none
-   &kp none     &kp TILDE &kp BSLH &kp PRCT &kp AT    &kp LG(V)     &kp RC(B)   &kp EXCL  &kp LEFT &kp RIGHT &kp QMARK  &none
+   &none     &kp GRAVE &kp AMPS &kp PLUS &kp EQUAL &kp AT        &kp EXCL    &kp ASTRK &kp HASH &kp SLASH &kp PIPE   &none
+   &none     &kp CARET &kp LBKT &kp LBRC &kp LPAR  &kp DLLR      &kp UNDER   &kp RPAR  &kp RBRC &kp RBKT  &kp MINUS  &none
+   &none     &kp TILDE &kp BSLH &kp PRCT &kp AT    &kp LG(V)     &kp RC(B)   &kp EXCL  &kp LEFT &kp RIGHT &kp QMARK  &none
                                  &mo FUNCTION &trans &trans    &kp DEL &trans &kp DOWN
                         >;
                 };
@@ -57,19 +57,19 @@
                 number_layer {
                         label = "NUMBER";
                         bindings = <
-   &kp none    &trans &trans  &trans &trans  &trans     &trans   &kp N7   &kp N8  &kp N9   &trans   &none
-   &kp none    &trans &trans  &trans &trans  &trans     &trans   &kp N4   &kp N5  &kp N6   &trans   &none
-   &kp none    &trans &trans  &trans &trans  &trans     &trans   &kp N1   &kp N2  &kp N3   &trans   &none
+   &none    &trans &trans  &trans &trans  &trans     &trans   &kp N7   &kp N8  &kp N9   &trans   &none
+   &none    &trans &trans  &trans &trans  &trans     &trans   &kp N4   &kp N5  &kp N6   &trans   &none
+   &none    &trans &trans  &trans &trans  &trans     &trans   &kp N1   &kp N2  &kp N3   &trans   &none
                            &trans &tran &trans     &trans &trans &kp N0
                         >;
                 };
 
-                funcion_layer {
+                function_layer {
                         label = "FUNCTION";
                         bindings = <
-   &kp none    &mo CONFIG &trans  &trans &trans  &trans     &trans   &kp F7   &kp F8  &kp F9   &kp F10   &none
-   &kp none    &trans &trans  &trans &trans  &trans     &trans   &kp F4   &kp F5  &kp F6   &kp F11   &none
-   &kp none    &trans &trans  &trans &kp LG(C)  &kp LG(V)     &trans   &kp F1   &kp F2  &kp F3   &kp F12   &none
+   &none    &mo CONFIG &trans  &trans &trans  &trans     &trans   &kp F7   &kp F8  &kp F9   &kp F10   &none
+   &none    &trans &trans  &trans &trans  &trans     &trans   &kp F4   &kp F5  &kp F6   &kp F11   &none
+   &none    &trans &trans  &trans &kp LG(C)  &kp LG(V)     &trans   &kp F1   &kp F2  &kp F3   &kp F12   &none
                            &trans &kp K_PP &kp K_NEXT     &trans &trans &kp N0
                         >;
                 };
@@ -79,7 +79,7 @@
                         bindings = <
    &none     &reset        &none        &none        &none        &none           &none &none &none &none &none &none 
    &none     &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none
-   &none      &none        &none        &none        &none        &none           &none &none &none &none &none &bt BT_CLR
+   &none     &none        &none        &none        &none        &none           &none &none &none &none &none &bt BT_CLR
                                                 &trans &trans &trans    &trans &trans &trans
                         >;
                 };
