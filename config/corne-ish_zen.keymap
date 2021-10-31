@@ -37,10 +37,10 @@
                 default_layer {
                         label = "DVORAK";
                         bindings = <
-   &none   &hm SEMI COLON     &kp COMMA   &kp DOT    &kp P      &kp Y    &kp F &kp G      &kp C       &kp R         &kp L        &none
-   &none   &hm LSHIFT A &hm LCTRL O &hm LALT E &hm LGUI U &hm LG(LS(LA(LC))) I    &LS(LA(LC)) D &hm RGUI H &hm RALT T  &hm RCTRL N   &hm RSHIFT S &none
-   &none   &hm SQT DQT      &kp Q       &kp J      &kp K      &kp X    &kp B &kp M      &kp W       &kp V         &kp Z        &none
-              &kp ESC   &lt SYMBOL SPC     &kp TAB    &kp BSPC   &lt NUMBER ENTER &kp UP
+   &none   &hm SEMI COLON   &kp COMMA   &kp DOT    &kp P      &kp Y                         &kp F &kp G      &kp C            &kp R         &kp L        &none
+   &none   &hm LSHIFT A     &hm LCTRL O &hm LALT E &hm LGUI U &hm LG(LS(LA(LC))) I          &hm LS(LA(LC)) D &hm RGUI H       &hm RALT T    &hm RCTRL N  &hm RSHIFT S &none
+   &none   &hm SQT DQT      &kp Q       &kp J      &kp K      &kp X                         &kp B &kp M      &kp W            &kp V         &kp Z        &none
+                                          &kp ESC   &lt SYMBOL SPC     &kp TAB    &kp BSPC   &lt NUMBER ENTER &kp UP
                         >;
                 };
 
