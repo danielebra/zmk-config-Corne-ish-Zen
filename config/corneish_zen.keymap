@@ -14,10 +14,12 @@
 #define SYMBOL 1
 #define NUMBER 2
 #define FUNCTION 3
-
 #define CONFIG 4
+#define QWERTY 5
 
 &lt { quick_tap_ms = <250>; };
+
+#define TH_LYR(layer) &tap_hold_layer layer layer   // Macro to apply momentary-layer-on-hold/toggle-layer-on-tap to a specific layer
 
 
 / {
@@ -40,6 +42,16 @@
                 flavor = "hold-preferred";
                 bindings = <&kp>, <&kp>;
             };
+
+           // Momentarily and permanently toggle into a layer
+           tap_hold_layer: behavior_mo_tog {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                flavor = "hold-preferred";
+                tapping-term-ms = <225>;
+                bindings = <&tog>, <&mo>;
+           };
+  
         };
         keymap {
                 compatible = "zmk,keymap";
@@ -90,7 +102,17 @@
    &none     &none         &none        &none        &none        &none           &none &none &none &none &none &none 
    &none     &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none
    &none     &none        &none        &none        &none         &none           &none &none &none &none &bt BT_CLR &none
-                                                &trans &trans &trans    &trans &trans &trans
+                                                &trans &trans &trans    &trans &trans &tog QWERTY
+                        >;
+                };
+
+                qwerty_layer {
+                        label = "QWERTY";
+                        bindings = <
+   &none   &kp Q   &kp W   &kp E    &kp R    &kp T                         &kp Y    &kp U   &kp I       &kp O     &kp P      &none
+   &none   &kp A   &kp S   &kp D    &kp F    &kp G                         &kp H    &kp J   &kp K       &kp L     &kp SEMI   &none
+   &none   &kp Z   &kp X   &kp C    &kp V    &kp B                         &kp N    &kp M   &kp COMMA   &kp DOT   &kp SLASH  &none
+                                     &kp LALT   &kp SPC   &kp TAB    &kp BSPC   &kp ENTER   &kp TH_LYR(QWERTY)
                         >;
                 };
         };
